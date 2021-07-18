@@ -1,0 +1,24 @@
+//color text
+$colorText: #3c4148;
+$colorTextLight: #fff;
+// colortheme
+$colorAccent: #f29700;
+$colorAccentSecond: #0e65b7;
+$colorAccentDark: #3c4148;
+
+//subsidiary
+$colorLine: #dbddde;
+
+:root{
+    --color-text: #{$colorText};
+    --color-text-light: #{$colorTextLight};
+    --color-accent: #{$colorAccent};
+    --color-accent-second: #{$colorAccentSecond};
+    --color-accent-dark: #{$colorAccentDark}; 
+    --color-line: #{$colorLine}; 
+}
+
+
+
+
+

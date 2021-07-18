@@ -1,0 +1,81 @@
+.header{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: px-to-rem(27) px-to-rem(10) px-to-rem(23) 0;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-image{
+        margin-right: px-to-rem(12);
+    }
+    &__title{
+        font-size: px-to-rem(18);
+        color: var(--color-accent);
+        margin: 0;
+    }
+    &__text{
+        font-size: px-to-rem(12);
+        white-space: nowrap;
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+    }
+    &__search-input{
+        border: px-to-rem(1) solid var(--color-line);
+        border-radius: px-to-rem(3);
+        height: px-to-rem(26);
+        width: px-to-rem(242);
+        padding: 0 px-to-rem(10);
+        margin-right: px-to-rem(16);
+    }
+    &__btn-search{
+        --size-btn: #{px-to-rem(16)};
+        width: var(--size-btn);
+        height: var(--size-btn);
+        background-color: inherit;
+        border: none;
+        background: url(./../images/ico-search.png) no-repeat;
+    }
+
+    &__nav{
+        font-size: px-to-rem(12);
+        font-weight: 700;
+        font-family: Arial, sans-serif;
+        border-top: 1px solid var(--color-line);
+    }
+    &__nav-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__nav-item{
+        text-align: center;
+        flex: 1 1 auto;
+        &:hover{
+            background-color: var(--color-accent);
+            a{
+                color: #fff;  
+            }
+        }
+        &_current{
+            background-color: var(--color-accent-dark);
+            a{
+                color: #fff;
+            }
+                
+        }
+    }
+    
+    
+
+    &__nav-link{
+        display: block;
+        padding: px-to-rem(16) px-to-rem(22);
+        white-space: nowrap;
+    }
+}
