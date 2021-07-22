@@ -388,7 +388,7 @@ template {
   --color-accent: #f29700;
   --color-accent-second: #0e65b7;
   --color-accent-dark: #3c4148;
-  --color-line: #dbddde;
+  --color-line: #dadcdd;
   --color-BG: #083969;
 }
 
@@ -541,10 +541,9 @@ li {
 .slider {
   color: var(--color-text-light);
   position: relative;
-  height: 27.875rem;
+  max-height: 27.875rem;
   background-color: var(--color-BG);
-  background: url(./../images/bg-for-slide.png) 50% 80% no-repeat;
-  background-size: cover;
+  background: url(./../images/bg-for-slide.png) 50% no-repeat;
 }
 
 .slider__wrapper {
@@ -558,22 +557,31 @@ li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 5rem;
+  padding: 3.875rem 0.625rem;
 }
 
 .slider__pre-title {
   background-color: var(--color-accent);
   margin-bottom: 1rem;
+  padding: 0.5rem 0.625rem 0.375rem;
+  text-transform: uppercase;
 }
 
 .slider__title {
-  font-size: 3.75rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 2.125rem;
+  margin-bottom: 1.25rem;
+  max-width: 32.125rem;
+}
+
+.slider__text {
+  line-height: 1.5rem;
+  max-width: 37.5rem;
 }
 
 .slider__indicators {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.75rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -601,7 +609,7 @@ li {
 }
 
 .slider__indicators li:hover {
-  background-color: rgba(219, 221, 222, 0.5);
+  background-color: rgba(218, 220, 221, 0.5);
 }
 
 @media (min-width: 576px) {
@@ -617,6 +625,12 @@ li {
     padding: 0 0.625rem;
     margin-right: 1rem;
   }
+
+  .slider__title {
+    font-size: 3.75rem;
+    line-height: 3rem;
+    margin-bottom: 2.125rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -626,6 +640,11 @@ li {
 
   .header__search-input {
     width: 15.125rem;
+  }
+
+  .slider {
+    background-size: cover;
+    background-position: 50% 80%;
   }
 }
 
@@ -637,8 +656,12 @@ li {
   .header__nav-list {
     padding: 0 3.5rem;
   }
+
+  .slider__wrapper {
+    padding: 3.875rem 5rem;
+  }
 }
 
 .webp .header__btn-search { background: url(./../images/ico-search.webp) no-repeat; }
 
-.webp .slider { background: url(./../images/bg-for-slide.webp) 50% 80% no-repeat; }
+.webp .slider { background: url(./../images/bg-for-slide.webp) 50% no-repeat; }
