@@ -1,13 +1,17 @@
 //color text
 $colorText: #3c4148;
 $colorTextLight: #fff;
+
 // colortheme
 $colorAccent: #f29700;
-$colorAccentSecond: #0e65b7;
+$colorAccentSecond: #0e65b7; 
 $colorAccentDark: #3c4148;
 
+//colorBG
+$colorBG: #083969;
+
 //subsidiary
-$colorLine: #dbddde;
+$colorLine: rgb(218, 220, 221);
 
 :root{
     --color-text: #{$colorText};
@@ -15,7 +19,8 @@ $colorLine: #dbddde;
     --color-accent: #{$colorAccent};
     --color-accent-second: #{$colorAccentSecond};
     --color-accent-dark: #{$colorAccentDark}; 
-    --color-line: #{$colorLine}; 
+    --color-line: #{$colorLine};
+    --color-BG: #{$colorBG};
 }
 
 

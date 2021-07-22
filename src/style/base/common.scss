@@ -19,8 +19,25 @@ li {
 }
 
 .container{
-    max-width: px-to-rem(948);
     margin: auto;
+    width: auto;
+    @include for-sm{
+        width: px-to-rem(540);
+    }
+    @include for-md{
+        width: px-to-rem(720);
+    }
+    @include for-lg{
+        width: px-to-rem(948);
+    }
+    // @include for-xl{
+    //     max-width: px-to-rem(1140);
+    // }
+    // @include for-xl{
+    //     max-width: px-to-rem(1320);
+    // }
+    
+    
 }
 
 
