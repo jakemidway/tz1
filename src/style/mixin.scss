@@ -1,5 +1,5 @@
 // брейкпойнтs
-// for         xs               max-width 575px
+// for         xs               min-width 360px
 // for         sm               min-width 576px max-width 767px
 // for         md               min-width 768px max-width 991px
 // for         lg               min-width 992px max-width 1199px
@@ -7,7 +7,7 @@
 // for         xxl              min-width 1400px 
  
 @mixin for-xs {
-    @media (max-width: 575px) {
+    @media (min-width: 360px) {
         @content;
     }
 }

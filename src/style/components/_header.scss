@@ -12,6 +12,9 @@
     }
 
     &__logo-image {
+        --size-img: px-to-rem(70);
+        width: var(--size-img);
+        height: var(--size-img);
         margin-right: px-to-rem(12);
     }
 

@@ -457,6 +457,9 @@ li {
 }
 
 .header__logo-image {
+  --size-img: px-to-rem(70);
+  width: var(--size-img);
+  height: var(--size-img);
   margin-right: 0.75rem;
 }
 
@@ -568,7 +571,7 @@ li {
 }
 
 .slider__title {
-  font-size: 2.5rem;
+  font-size: 1.25rem;
   line-height: 2.125rem;
   margin-bottom: 1.25rem;
   max-width: 32.125rem;
@@ -610,6 +613,57 @@ li {
 
 .slider__indicators li:hover {
   background-color: rgba(218, 220, 221, 0.5);
+}
+
+.service {
+  font-size: 0.8125rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.service__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 2.25rem 1rem 2.875rem;
+  border: 1px solid var(--color-text-light);
+}
+
+.service__item:hover {
+  background-color: #edeeee;
+  border: 1px solid var(--color-line);
+}
+
+.service__img {
+  --size-img: px-to-rem(20);
+  min-width: var(--size-img);
+  min-height: var(--size-img);
+  margin-right: 0.875rem;
+}
+
+@media (min-width: 360px) {
+  .slider__title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 576px) {
