@@ -59,6 +59,10 @@
         background: url(./../images/ico-search.png) no-repeat;
     }
 
+    &__btn-search-text{
+        visibility: hidden;
+    }
+
     &__nav {
         font-size: px-to-rem(12);
         font-weight: 700;
@@ -75,6 +79,8 @@
         }
 
     }
+
+    
 
     &__nav-item {
         text-align: center;

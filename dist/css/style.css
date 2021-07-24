@@ -497,6 +497,10 @@ li {
   background: url(./../images/ico-search.png) no-repeat;
 }
 
+.header__btn-search-text {
+  visibility: hidden;
+}
+
 .header__nav {
   font-size: 0.75rem;
   font-weight: 700;
@@ -631,7 +635,8 @@ li {
       flex-wrap: wrap;
 }
 
-.service__item {
+.service__link {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +653,7 @@ li {
   border: 1px solid var(--color-text-light);
 }
 
-.service__item:hover {
+.service__link:hover {
   background-color: #edeeee;
   border: 1px solid var(--color-line);
 }
