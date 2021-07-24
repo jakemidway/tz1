@@ -19,12 +19,11 @@
         flex: 1 1 auto;
         padding: px-to-rem(36) px-to-rem(16) px-to-rem(46);
         border: 1px solid var(--color-text-light);
-        // border-right: 1px solid var(--color-text-light);
+        
 
         &:hover {
             background-color: lighten($colorLine, 7%);
             border: 1px solid var(--color-line);
-            // border-right: 1px solid var(--color-line);
         }
     }
 
