@@ -487,6 +487,7 @@ li {
 /* кнопки влево и вправо */
 
 .slider__control {
+  opacity: 0;
   position: absolute;
   top: 50%;
   display: -webkit-box;
@@ -498,10 +499,10 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40px;
+  width: 40%;
   color: #fff;
   text-align: center;
-  height: 50px;
+  height: 100%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -713,7 +714,8 @@ li {
 .promo__slide {
   color: var(--color-text-light);
   background-color: var(--color-BG);
-  background: url(./../images/bg-for-slide.png) 50% no-repeat;
+  background: url(./../images/bg-for-slide.png) 50% 70% no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,7 +726,6 @@ li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 3.875rem 0.625rem;
 }
 
 .promo__pre-title {
@@ -744,6 +745,20 @@ li {
 .promo__text {
   line-height: 1.5rem;
   max-width: 37.5rem;
+}
+
+.promo__conatainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3.875rem 0.625rem;
 }
 
 .service {
@@ -803,6 +818,12 @@ li {
     width: 33.75rem;
   }
 
+  .slider__control {
+    opacity: 1;
+    width: 40px;
+    height: 50px;
+  }
+
   .header__search-input {
     height: 1.625rem;
     border: 0.0625rem solid var(--color-line);
@@ -838,11 +859,11 @@ li {
     padding: 0 3.5rem;
   }
 
-  .promo__slide {
+  .promo__conatainer {
     padding: 3.875rem 5rem;
   }
 }
 
 .webp .header__btn-search{ background: url(./../images/ico-search.webp) no-repeat; }
 
-.webp .promo__slide{ background: url(./../images/bg-for-slide.webp) 50% no-repeat; }
+.webp .promo__slide{ background: url(./../images/bg-for-slide.webp) 50% 70% no-repeat; }
