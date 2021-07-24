@@ -13,12 +13,14 @@
 // layout classes (.container) & extends
 
 //libraries
+@import './libs/chiefslider.scss';
 
 //elements; - small BEM  blocks
 
 //components; - middle BEM blocks
 @import './components/header';
-@import './components/slider';
+// @import './components/slider';
+@import './components/promo';
 @import './components/service';
 
 // sections - big BEM  blocks

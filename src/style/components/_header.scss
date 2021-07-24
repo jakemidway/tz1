@@ -37,6 +37,7 @@
     &__search-input {
         border: 0;
         width: 0;
+
         @include for-sm {
             height: px-to-rem(26);
             border: px-to-rem(1) solid var(--color-line);
@@ -45,12 +46,14 @@
             padding: 0 px-to-rem(10);
             margin-right: px-to-rem(16);
         }
-        @include for-md{
+
+        @include for-md {
             width: px-to-rem(242);
         }
     }
 
     &__btn-search {
+        // position: relative;
         --size-btn: #{px-to-rem(16)};
         width: var(--size-btn);
         height: var(--size-btn);
@@ -59,8 +62,21 @@
         background: url(./../images/ico-search.png) no-repeat;
     }
 
-    &__btn-search-text{
-        visibility: hidden;
+    &__btn-search-text {
+        // position: absolute;
+        // clip: rect(0 0 0 0);
+        // width: 1px;
+        // height: 1px;
+        // margin: -1px;
+        &:not(:focus):not(:active){
+            clip: rect(0 0 0 0);
+            clip-path: inset(-50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
     }
 
     &__nav {
@@ -80,7 +96,7 @@
 
     }
 
-    
+
 
     &__nav-item {
         text-align: center;

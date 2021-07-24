@@ -27,7 +27,9 @@
                 
                 <form class="header__form">
                     <input class="header__search-input" type="search" name="q">
-                    <button class="header__btn-search" type="submit"><span class="header__btn-search-text">поиск</span></button>
+                    <button class="header__btn-search" type="submit">
+                        <span class="header__btn-search-text">поиск</span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -50,7 +52,10 @@
         
     </header>
 
-    <section class="slider">
+
+
+
+    <!-- <section class="slider">
         <div class="container">
             <div class="slider__wrapper">
                 <div class="slider__pre-title">Наши компетенции</div>
@@ -67,11 +72,79 @@
             <li></li>
         </ol>
         
-    </section>
+    </section> -->
+    
+    
 
+    <section class="promo">
+        <div class="container">
+
+            <div class="slider">
+              <div class="slider__container">
+                <div class="slider__wrapper">
+                  <div class="slider__items">
+                    <div class="slider__item">
+                        <div class="promo__slide">
+                            <div class="promo__pre-title">Наши компетенции</div>
+                            <h2 class="promo__title">Объекты химимческой промышленности</h2>
+                            <p class="promo__text">Важнейшим преимуществом компании является способность <br> проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="promo__slide">
+                            <div class="promo__pre-title">Наши компетенции</div>
+                            <h2 class="promo__title">Объекты химимческой промышленности</h2>
+                            <p class="promo__text">Важнейшим преимуществом компании является способность <br> проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="promo__slide">
+                            <div class="promo__pre-title">Наши компетенции</div>
+                            <h2 class="promo__title">Объекты химимческой промышленности</h2>
+                            <p class="promo__text">Важнейшим преимуществом компании является способность <br> проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="promo__slide">
+                            <div class="promo__pre-title">Наши компетенции</div>
+                            <h2 class="promo__title">Объекты химимческой промышленности</h2>
+                            <p class="promo__text">Важнейшим преимуществом компании является способность <br> проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="promo__slide">
+                            <div class="promo__pre-title">Наши компетенции</div>
+                            <h2 class="promo__title">Объекты химимческой промышленности</h2>
+                            <p class="promo__text">Важнейшим преимуществом компании является способность <br> проектировать и строить «под ключ». При этом данные процессы ведутся одновременно, что позволяет заказчику значительно сократить общий строительный цикл объекта.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="slider__control" data-slide="prev"></a>
+              <a href="#" class="slider__control" data-slide="next"></a>
+              <ol class="slider__indicators">
+                <li class="promo__slider-indicators" data-slide-to="0"></li>
+                <li class="promo__slider-indicators" data-slide-to="1"></li>
+                <li class="promo__slider-indicators" data-slide-to="2"></li>
+                <li class="promo__slider-indicators" data-slide-to="3"></li>
+                <li class="promo__slider-indicators" data-slide-to="4"></li>
+              </ol>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    
+    
+
+   
     <section class="service">
         <div class="container">
             
+      
                 <ul class="service__list">
                     <li class="service__item">
                         <a class="service__link" href="#">
@@ -107,6 +180,16 @@
             
         </div>
     </section>
+
+
+    <script defer src="./js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: false
+            });
+        });
+    </script>
 </body>
 
 </html>
